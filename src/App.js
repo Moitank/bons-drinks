@@ -1,14 +1,16 @@
 import './App.css';
-import Header from './components/Header';
-import Home from './components/Home';
-import Footer from './components/Footer';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import Footer from './components/Footer/Footer';
+import Contatos from './components/Contatos/Contatos';
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Home />
+      <Contatos />
+      {/* <Home /> */}
       <Footer />
     
     </div>
