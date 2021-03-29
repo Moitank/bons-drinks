@@ -4,6 +4,7 @@ import imgContato from "./../../img/contatos.jpg"
 
 export default class Contatos extends Component {
     render() {
+
         return (
             <div className={styles.formContainer}>
                 <h1>Contato</h1>

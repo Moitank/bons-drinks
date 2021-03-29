@@ -58,5 +58,5 @@
 }
 
 .mainForm form button:hover {
-    background-color: #f9ae48;
+    background-color: var(--orange);
 }

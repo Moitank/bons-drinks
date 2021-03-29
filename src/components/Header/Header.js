@@ -1,20 +1,31 @@
-import React, { Component } from "react";
+import React from "react";
 import styles from  "./Header.module.css"
+import {Link} from "react-router-dom"
 
-export default class Header extends Component {
-  render() {
+export default function Header() {
+  
     return (
       
         <header>
           <ul className={styles.ulHeader}>
-            <li>Drinks</li>
-            <li>Sobre nós</li>
-            <li className ={styles.logo}>Bons Drinks</li>
-            <li>Nosso Time</li>
-            <li>Contatos</li>
+            <li>
+              <Link to="/drinks">Drinks</Link>
+            </li>
+            <li>
+              <Link to="/sobre-nos">Sobre Nós</Link>
+            </li>
+            <li className ={styles.logo}>
+              <Link to="/">Bons Drinks</Link>
+            </li>
+            <li>
+              <Link to="/nosso-time">Nosso Time</Link>
+            </li>
+            <li>
+              <Link to="/contatos">Contato</Link>
+            </li>
           </ul>
         </header>
       
     );
-  }
+  
 }
